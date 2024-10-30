@@ -27,7 +27,7 @@ jobs:
       - name: Login to docker-hub
         uses: docker/login-action@v2
         with:
-          username: spectado
+          username: iankibet
           password: ${{ secrets.DOCKERHUB_TOKEN }}
 
       - name: Docker meta
@@ -35,7 +35,7 @@ jobs:
         uses: docker/metadata-action@v4
         with:
           images: |
-            spectado/pocketbase
+            iankibet/pocketbase
           tags: |
             type=semver,pattern={{version}},value=${{ steps.pocketbase.outputs.version }}
 
