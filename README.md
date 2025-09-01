@@ -66,3 +66,6 @@ services:
       - /path/to/public:/pb_public
       - /path/to/migrations:/pb_migrations
 ```
+
+
+<!-- Security scan triggered at 2025-09-02 00:44:57 -->
